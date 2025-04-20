@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbG-rw-HSO">
+                                <rect key="frame" x="179" y="292" width="56" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q48-d9-1cA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE6-6J-ton">
+                                <rect key="frame" x="23" y="321" width="371" height="94"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Pressing the button below will migrate your device from AirWatch to Microsoft InTune. During this process, all enterprise applications &amp; data will be removed. Your photos &amp; text messages will not be impacted. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WSO_InTune" translatesAutoresizingMaskIntoConstraints="NO" id="n9W-k7-YQb">
+                                <rect key="frame" x="20" y="40" width="374" height="114"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQq-x7-nNF">
+                                <rect key="frame" x="23" y="498" width="371" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Zzp-3g-jkg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="migrationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7A-Wz-3oe"/>
+                                </connections>
+                            </button>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujW-7L-5Yz">
+                                <rect key="frame" x="20" y="209" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2M3-b1-a8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cE6-6J-ton" firstAttribute="trailing" secondItem="LQq-x7-nNF" secondAttribute="trailing" id="4mq-tS-3MN"/>
+                            <constraint firstItem="TbG-rw-HSO" firstAttribute="top" secondItem="ujW-7L-5Yz" secondAttribute="bottom" constant="33" id="4yd-N9-bxD"/>
+                            <constraint firstItem="n9W-k7-YQb" firstAttribute="leading" secondItem="ujW-7L-5Yz" secondAttribute="leading" id="AjV-Cc-if8"/>
+                            <constraint firstItem="n9W-k7-YQb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FU5-zr-IP4"/>
+                            <constraint firstItem="cE6-6J-ton" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="G4G-VQ-NKe"/>
+                            <constraint firstItem="ujW-7L-5Yz" firstAttribute="centerX" secondItem="TbG-rw-HSO" secondAttribute="centerX" id="PZB-YK-9oi"/>
+                            <constraint firstItem="ujW-7L-5Yz" firstAttribute="top" secondItem="n9W-k7-YQb" secondAttribute="bottom" constant="55" id="TeD-jt-O7q"/>
+                            <constraint firstItem="LQq-x7-nNF" firstAttribute="top" secondItem="cE6-6J-ton" secondAttribute="bottom" constant="83" id="Ule-Xm-rUp"/>
+                            <constraint firstItem="n9W-k7-YQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WUO-gC-70W"/>
+                            <constraint firstItem="n9W-k7-YQb" firstAttribute="trailing" secondItem="ujW-7L-5Yz" secondAttribute="trailing" id="bUP-Uo-a71"/>
+                            <constraint firstItem="cE6-6J-ton" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bpU-Yw-H4N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LQq-x7-nNF" secondAttribute="bottom" constant="171" id="gUm-p4-GJU"/>
+                            <constraint firstItem="n9W-k7-YQb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kWk-cL-ick"/>
+                            <constraint firstItem="cE6-6J-ton" firstAttribute="top" secondItem="TbG-rw-HSO" secondAttribute="bottom" constant="8" id="qVK-Fi-60i"/>
+                            <constraint firstItem="cE6-6J-ton" firstAttribute="leading" secondItem="LQq-x7-nNF" secondAttribute="leading" id="qlR-lE-Yb1"/>
+                            <constraint firstItem="ujW-7L-5Yz" firstAttribute="trailing" secondItem="cE6-6J-ton" secondAttribute="trailing" id="x4b-gb-0iE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="cE6-6J-ton" id="hc6-Xf-dlA"/>
+                        <outlet property="migrationButton" destination="LQq-x7-nNF" id="0QA-0c-TCZ"/>
+                        <outlet property="userNameLabel" destination="ujW-7L-5Yz" id="hNK-Jy-sah"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="115.7608695652174"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WSO_InTune" width="1536" height="1024"/>
+    </resources>
+</document>
