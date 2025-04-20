@@ -62,7 +62,7 @@ The app supports both ownership scenarios with custom logic, using **App Configu
 
 ## 🧾 License
 
-Internal use only or MIT (based on your deployment preference)
+MIT 
 
 ---
 
